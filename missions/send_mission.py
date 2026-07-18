@@ -1,5 +1,5 @@
 # =====================================================
-#  missions/send_mission.py — คนรับผิดชอบ: ______________________
+#  missions/send_mission.py — คนรับผิดชอบ: Mj
 # =====================================================
 
 # TODO: (OPTIONAL) สร้างฟังก์ชัน send_mission(person)
@@ -8,7 +8,14 @@
 #   - ไม่ถึงเกณฑ์ -> return {"status": False, "reward": 0}
 #   (การลบคนที่ตาย main.py จัดการเอง)
 
-
+def send_mission(person) :
+    if person["power"] >= 7 :
+        person["money"] += 300000
+        status = {"status": True,"reward" : 300000}
+        return status
+    else :
+        status = {"status": False,"reward" : 0}
+        return status
 # ทดสอบ: python -m missions.send_mission
 if __name__ == "__main__":
     strong = {"name": "Tony", "power": 9, "money": 1000}
