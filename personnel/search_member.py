@@ -1,11 +1,18 @@
 # =====================================================
-#  personnel/search_member.py — คนรับผิดชอบ: ______________________
+#  personnel/search_member.py — คนรับผิดชอบ: Mj
 # =====================================================
 from data import family_members
 
 # TODO: สร้างฟังก์ชัน search_member(target_name)
 #   - หาคนใน family_members ที่ชื่อตรงกับ target_name (ไม่สนตัวพิมพ์ใหญ่/เล็ก)
 #   - เจอ -> return dict ของคนนั้น | ไม่เจอ -> return None
+def search_member(target_name) :
+    for person in family_members :
+        if target_name.lower() == person["name"].lower() :
+            return person["name"]
+        else :
+            return None
+            
 
 
 # ทดสอบ: python -m personnel.search_member
