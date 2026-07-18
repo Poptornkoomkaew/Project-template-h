@@ -24,6 +24,7 @@ def add_member(name, age, power, money):
      "equipment": "ไม่มี"
     }
     family_members.append(member)
+    return member
 
 # ทดสอบ: python -m personnel.add_member
 if __name__ == "__main__":
