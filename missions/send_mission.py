@@ -11,11 +11,9 @@
 def send_mission(person) :
     if person["power"] >= 7 :
         person["money"] += 300000
-        status = {"status": True,"reward" : 300000}
-        return status
+        return {"status": True,"reward" : 300000}
     else :
-        status = {"status": False,"reward" : 0}
-        return status
+        return {"status": False,"reward" : 0}
 # ทดสอบ: python -m missions.send_mission
 if __name__ == "__main__":
     strong = {"name": "Tony", "power": 9, "money": 1000}
