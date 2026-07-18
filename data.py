@@ -13,3 +13,4 @@ weapons_catalog = {
     "2": {"name": "ปืนพก 9mm", "price": 50000, "bonus": 5},
     "3": {"name": "ปืนกล Thompson", "price": 150000, "bonus": 10}
 }
+
